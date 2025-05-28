@@ -1,0 +1,35 @@
+/* my-fire-monitor-frontend/src/components/DateRangePicker.css */
+.date-range-picker {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.date-range-picker label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.date-range-picker input[type="date"],
+.date-range-picker button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.date-range-picker button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.date-range-picker button:hover {
+    background-color: #0056b3;
+}

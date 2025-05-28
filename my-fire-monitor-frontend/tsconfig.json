@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Mantenha uma versão moderna
+    // "useAwaitsAndYieldsInAsyncMethods": true, // <-- REMOVA ESTA LINHA (é a causa do primeiro erro)
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true, // Mantenha noEmit: true para o tsconfig principal do frontend (compilador Vite que fará o trabalho)
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true, // Mantenha isso ativado para o 'import type' no frontend
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  // "references": [{ "path": "./tsconfig.node.json" }] // <-- REMOVA OU COMENTE ESTA LINHA se você não está usando a funcionalidade de "project references" complexa.
+                                                         // Para a maioria dos projetos Vite/React, isso não é necessário.
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs", // Mantenha commonjs aqui
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true, // Habilite esta opção para melhor interoperabilidade entre CJS e ESM
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": false // <-- Mude esta linha para 'false' ou remova-a (se não estiver presente)
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
